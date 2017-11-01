@@ -1,0 +1,12 @@
+{
+    "name": "say3no/try_tdd",
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "authors": [
+        {
+            "name": "say3no",
+            "email": "say3no@gmail.com"
+        }
+    ]
+}
