@@ -12,6 +12,10 @@ use \PHPUnit\Framework\TestCase;
 class StackTest extends TestCase
 {
 
+    // この依存性とは、テストメソッドが実行される順序を定義するものではありません。
+    // @dependsは、依存先の戻り値を引数として受け取る
+    // ちなみにいわゆるポインタをわたしているので、コピーを渡したい場合は@depends cloneを使う
+
     public function testEmpty()
     {
         $stack = [];
@@ -33,7 +37,6 @@ class StackTest extends TestCase
 
         return $stack;
     }
-
 
     /**
      * @param array $stack
