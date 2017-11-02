@@ -8,12 +8,9 @@
 
 class MultipleDependenciesTest extends \PHPUnit\Framework\TestCase
 {
-
-
     // ➔ インタプリタだからdependsの順序関係はテストを書く順序でコントロールしろってこと？
     // その通りだった。このテストは必ずSkipped:1になる。
     // 依存関係がある場合は先に依存先のテストが終了していなければならない
-
 
     /**
      * @depends testProducerFirst
