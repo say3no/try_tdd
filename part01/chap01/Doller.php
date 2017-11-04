@@ -10,7 +10,7 @@
 
 class Doller
 {
-    public $amount;
+    private $amount;
 
     function __construct(int $amount)
     {
