@@ -14,9 +14,3 @@
 
 ### 第一章
 
-さっそくコードを写しながら書いていくのだが、諸事情からphpで書きたい。
-なのでcomposerで用意したはいいがphpstromの期限が切れていててんやわや。
-
-現在　https://phpunit.de/manual/current/ja/writing-tests-for-phpunit.html
-を写してるところ。
-ある程度やったらTDDbyExampleに戻ります。
