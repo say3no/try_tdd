@@ -12,6 +12,8 @@ class MoneyTest extends \PHPUnit\Framework\TestCase
      * TODO: 2.1. amountをprivateにする
      * 2.2.  Dollarの副作用どうする？（副作用ってなに）
      * TODO: 2.3. Moneyの丸め処理はどうする？
+     * 2.4. equals()
+     * TODO: 2.5. hashCode()
      */
 
     // 1.（足し算）と2.（掛け算）では、掛け算のほうが簡単っぽいので2.から始める
@@ -22,8 +24,17 @@ class MoneyTest extends \PHPUnit\Framework\TestCase
         $product = $five->times(2);
         $this->assertEquals(10, $product->amount);
         $product = $five->times(3);
-        $this->assertEquals(15,$product->amount);
+        $this->assertEquals(15, $product->amount);
     }
+
+
+    // ５ドルオブジェクトはいつでも等価であることを示すテスト
+    public function testEquality()
+    {
+        $this->assertTrue((new Doller(5))->equals(new Doller(5)));
+        $this->assertFalse((new Doller(5))->equals(new Doller(6)));
+    }
+
 
 }
 

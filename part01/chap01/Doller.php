@@ -1,7 +1,6 @@
 <?php
 
 
-
 /**
  * Created by PhpStorm.
  * User: say0213
@@ -25,6 +24,11 @@ class Doller
     function times(int $multi)
     {
         return new Doller($this->amount * $multi);
+    }
+
+    public function equals(Doller $a)
+    {
+        return $a->amount === $this->amount;
     }
 
 }
