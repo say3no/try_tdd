@@ -1,4 +1,7 @@
 <?php
+
+
+
 /**
  * Created by PhpStorm.
  * User: say0213
@@ -17,10 +20,11 @@ class Doller
 
     /**
      * @param int $multi
+     * @return Doller
      */
     function times(int $multi)
     {
-        $this->amount *= $multi;
+        return new Doller($this->amount * $multi);
     }
 
 }
